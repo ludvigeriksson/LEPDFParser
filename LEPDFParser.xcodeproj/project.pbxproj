@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		83B726FF209B378B002FF589 /* LEPDFParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B726FD209B378B002FF589 /* LEPDFParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83B72706209B3875002FF589 /* LEPDFParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B72705209B3875002FF589 /* LEPDFParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		83B726FA209B378B002FF589 /* LEPDFParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LEPDFParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B726FD209B378B002FF589 /* LEPDFParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LEPDFParser.h; sourceTree = "<group>"; };
 		83B726FE209B378B002FF589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83B72705209B3875002FF589 /* LEPDFParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEPDFParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,9 +49,18 @@
 			isa = PBXGroup;
 			children = (
 				83B726FD209B378B002FF589 /* LEPDFParser.h */,
+				83B72708209B38F6002FF589 /* Classes */,
 				83B726FE209B378B002FF589 /* Info.plist */,
 			);
 			path = LEPDFParser;
+			sourceTree = "<group>";
+		};
+		83B72708209B38F6002FF589 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				83B72705209B3875002FF589 /* LEPDFParser.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +106,7 @@
 				TargetAttributes = {
 					83B726F9209B378B002FF589 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -130,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B72706209B3875002FF589 /* LEPDFParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +272,7 @@
 		83B72703209B378B002FF589 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -276,6 +290,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ludvigeriksson.LEPDFParser;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +299,7 @@
 		83B72704209B378B002FF589 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
